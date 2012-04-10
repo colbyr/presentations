@@ -7,22 +7,113 @@
 	
 	<!-- Replace path with correct path to deck.core.css. -->
   <link rel="stylesheet" href="core/deck.core.css" type="text/css">
+  <link rel="stylesheet" href="themes/transition/horizontal-slide.css" type="text/css">
+  <link rel="stylesheet" href="themes/style/colby.css" type="text/css">
 	
 	<!-- Any other extension CSS files go here. -->
 	
 	<!-- Replace path with correct path to Modernizr file. -->
 	<script src="modernizr.custom.js"></script>
+
 </head>
 <body class="deck-container">
 
-<!-- Create any number of elements with class slide within the container -->
+<!-- this is a presentation -->
 <section class="slide">
 
-	<h1>Git</h1>
+	<div class="vcenter">
+		<h1>A Presentation</h1>
+		<p>this is a test</p>
+	</div>
 
 </section>
+
+<!-- make bullets -->
+<section class="slide">
+
+	<h2>Big Bullet Points</h2>
+
+	<ul>
+		<li class="slide">They're huge!</li>
+		<li class="slide">You can read them better...</li>
+		<li class="slide">Which means they're paying more attention to you and less to the text.</li>
+	</ul>
+
+</section>
+
+<!-- use pictures -->
+<section class="slide">
+
+	<h2>A Picture</h2>
+
+	<img src="http://octodex.github.com/images/baracktocat.jpg" style="max-height: 70%;" />
+
+</section>
+
+<!-- a block quote -->
+<section class="slide">
+
+	<h2>A quote!</h2>
+
+	<p>Because dammit, sometimes you just need a block quote.</p>
+
+	<blockquote>This here is a quote!<br/><cite>~ Colby</cite></blockquote>
+
+</section>
+
+<!-- code -->
+<section class="slide">
+
+	<h2>Some code...</h2>
+	<h3>Why do I like javascript?</h3>
+<pre><code>// well duh...
+var javascript_is_the_coolest = (function () {
+	return true; 
+}());</code></pre>
 	
-<!-- Other extension HTML snippets go here, at the bottom of the deck container. -->
+	<p>This is code in a paragraph: <code>var hello = "world";</code></p>
+
+</section>
+
+<!-- paragraphs -->
+<section class="slide">
+
+	<h2>Text</h2>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</section>
+
+<!-- links -->
+<section class="slide">
+
+	<h2>Links</h2>
+
+	<p>This paragraph has a <a href="http://colbyrabideau.com">link</a> in it!!! Woah! That's the coolest link I have EVER SEEN!</p>
+
+</section>
+
+<!-- vcenter -->
+<section class="slide">
+
+	<div class="vcenter">
+		<h2>Vertically Centered</h2>
+		<h3>with a subtitle!</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+</section>
+
+<!-- the end -->
+<section class="slide">
+
+	<div class="vcenter">
+		<h3>the end</h3>
+	</div>
+
+</section>
 
 <!-- Update these paths to point to the correct files. -->
 <script src="jquery-1.7.min.js"></script>
@@ -37,5 +128,20 @@
 		$.deck('.slide');
 	});
 </script>
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Patua+One::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+
 </body>
 </html>
