@@ -14,7 +14,8 @@ author: @colbyrabideau
     height: 100%;
 }
 .deck-container .slide {
-    background: #fff;
+    background-color: #fff;
+    border-color: #fff;
 }
 .deck-container .slide h1 {
     color: #FA4B00;
