@@ -56,6 +56,9 @@ author: @colbyrabideau
     background-color: #eee;
     padding: .2em .5em .3em;
 }
+.deck-container .slide pre code {
+    padding: 0;
+}
 
 .deck-container .slide blockquote {
     font-size: 2em;
