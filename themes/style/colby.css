@@ -4,6 +4,16 @@ Colby's Theme - deck.js
 author: @colbyrabideau
 */
 
+.deck-container .slide .no-border {
+    border: 0;
+}
+.deck-container .slide .accent {
+    color: #FA4B00;
+}
+.deck-container .slide .dark {
+    color: #333;
+}
+
 .deck-container {
     font-family: "Helvetica Neue", sans-serif;
     font-size: 1.5em;
@@ -13,9 +23,12 @@ author: @colbyrabideau
 .deck-container section {
     height: 100%;
 }
+.deck-container .slide img {
+    max-height: 70%;
+}
 .deck-container .slide {
     background-color: #fff;
-    border-color: #fff;
+    border: none;
 }
 .deck-container .slide h1 {
     color: #FA4B00;
@@ -27,7 +40,7 @@ author: @colbyrabideau
     border-bottom: solid 1px #FA4B00;
 }
 .deck-container .slide h3 {
-    font-family: 'Patua One', Georgia, serif;
+    /*font-family: 'Patua One', Georgia, serif;*/
     color: #888;
 }
 .deck-container .slide li {
@@ -43,12 +56,16 @@ author: @colbyrabideau
     background-color: #eee;
     padding: .2em .5em .3em;
 }
+
 .deck-container .slide blockquote {
     font-size: 2em;
     font-family: Georgia, serif;
     font-style: italic;
     padding: 1em 1.5em;
     border-left: 5px solid #FA4B00;
+}
+.deck-container .slide .vcenter blockquote {
+    text-align: left;
 }
 .deck-container .slide blockquote p {
     margin: 0;
