@@ -86,7 +86,7 @@
 
     <h2>Initialize</h2>
 
-    <p><code>git init</code> creates a new repository in the current directory.</p>
+    <p>Git is a command line application. <code>git init</code> creates a new repository in the current directory.</p>
 
 <pre><code>mkdir MyProject
 cd MyProject
@@ -94,11 +94,76 @@ git init</code></pre>
 
 </section>
 
-
-<!-- resources -->
 <section class="slide">
 
-    <h1>Resources</h1>
+    <h2>Git is always watching...</h2>
+
+    <p>Whenever you add, remove or change a file in your repository, git knows! You can check the status of the repo with <code>git status</code> which will return something like this:</p>
+
+<pre><code># On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use "git add" to track)</code></pre>
+
+</section>
+
+<section class="slide">
+
+    <h2>Track changes!</h2>
+
+    <p>Before you can commit changes to the repository, you have to track them using <code>git add .</code>.</p>
+
+
+    <p>Running <code>git status</code> after adding changes will show that the changes have been "staged" for commit:</p>
+
+    <pre><code># On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached &lt;file&gt;..." to unstage)
+#
+#   new file:   readme.md
+#</code></pre>
+
+</section>
+
+
+<section class="slide">
+
+    <h2>Commit</h2>
+
+    <p>Once you've added any changes, you're ready to commit! Evey commit has a short message associated with it. The easiest way to specify a commit message is with the <code>-m</code> argument:</p>
+
+    <pre><code>git commit -m 'first commit'</code></pre>
+
+    <p>Produces:</p>
+
+    <pre><code>[master (root-commit) 1d06ce0] first commit
+ 0 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md</code></pre>
+
+</section>
+
+<!-- learning -->
+<section class="slide">
+
+    <h2>Learn more:</h2>
+
+    <ul>
+        <li>remotes & push/pull</li>
+        <li>branches</li>
+        <li>merging</li>
+        <li>conflicts</li>
+    </ul>
+
+</section>
+
+<!-- github -->
+<section class="slide">
+
+    <h1>Github</h1>
 
 </section>
 
@@ -106,7 +171,7 @@ git init</code></pre>
 
     <div class="vcenter">
         <img src="img/original.jpg" />
-        <h3>Github is like git...</h3>
+        <h3>using Github is like using git...</h3>
     </div>
 
 </section>
@@ -128,6 +193,26 @@ git init</code></pre>
         <li>its <strong class="accent">FREE</strong> for open source projects</li>
         <li>great tools for visualizing your repositories</li>
         <li>the best option for project management</li>
+    </ul>
+
+</section>
+
+<!-- resources -->
+<section class="slide">
+
+    <h1>Resources</h1>
+
+</section>
+
+<section class="slide">
+
+    <h2>Git GUIs</h2>
+
+    <p>Since the command line can be scary at times...</p>
+
+    <ul>
+        <li><strong>Mac:</strong> <a href="http://mac.github.com/">Github for Mac</a></li>
+        <li><strong>Windows:</strong> <a href="http://code.google.com/p/tortoisegit/">Tortise Git</a></li>
     </ul>
 
 </section>
