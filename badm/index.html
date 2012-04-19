@@ -51,13 +51,19 @@
 	<h2>Philosophy</h2>
 
     <ul>
-        <li class="slide">secure data</li>
-        <li class="slide">minimize request size</li>
+        <li>secure data</li>
+        <li class="slide">
+            minimize request size
+            <ul>
+                <li>lots of linking</li>
+            </ul>
+        </li>
         <li class="slide">fully audited</li>
-        <li>
+        <li class="slide">
             simple user experience
             <ul>
-                <li></li>
+                <li>minimize parameters</li>
+                <li>factory-free</li>
             </ul>
         </li>
     </ul>
@@ -93,8 +99,8 @@
     <h2>Tradeoffs</h2>
 
     <ul>
-        <li>auditing => takes longer</li>
-        <li class="slide">smaller requests => more requests</li>
+        <li>smaller requests => more requests</li>
+        <li class="slide">auditing => even more requests</li>
     </ul>
 
 </section>
@@ -102,6 +108,11 @@
 <section class="slide">
 
     <h2>Improvement</h2>
+
+    <ul>
+        <li>more automation</li>
+        <li>simplified queries</li>
+    </ul>
 
 </section>
 
@@ -116,19 +127,28 @@
 
     <h2>What works...</h2>
 
+    <ul>
+        <li>create</li>
+        <li>
+            read
+            <ul>
+                <li><code>Budget.all()</code></li>
+                <li><code>Budget.find(id)</code></li>
+            </ul>
+        </li>
+        <li>update</li>
+        <li>delete</li>
+        <li>auditing</li>
+    </ul>
+
 </section>
 
 <section class="slide">
 
     <h2>...and what doesn't</h2>
 
-</section>
-
-<section class="slide">
-
-    <h2>Bugs</h2>
-
     <ul>
+        <li>the hamper</li>
         <li>Phantom budgets and the curse of the BudgetFactory</li>
     </ul>
 
@@ -145,6 +165,12 @@
 <section class="slide">
 
     <h2>Coverage</h2>
+
+    <ul>
+        <li>CRUD</li>
+        <li>the hamper</li>
+        <li>Java Beans</li>
+    </ul>
 
 </section>
 

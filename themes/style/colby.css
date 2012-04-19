@@ -4,6 +4,10 @@ Colby's Theme - deck.js
 author: @colbyrabideau
 */
 
+.deck-container .slide li > ul {
+    margin-bottom: 0;
+}
+
 .deck-container .slide .no-border {
     border: 0;
 }
