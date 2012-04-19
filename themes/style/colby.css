@@ -4,6 +4,31 @@ Colby's Theme - deck.js
 author: @colbyrabideau
 */
 
+.media {
+    zoom:1;
+}
+.media:before,
+
+.media:after{
+    content:"";
+    display:table;
+}
+.media:after{
+    clear:both;
+}
+
+.media{
+    display:block;
+}
+    .media .img{
+        float:left;
+        margin-right:10px;
+    }
+    .media .body{
+        overflow:hidden;
+        margin-bottom:0;
+    }
+
 .deck-container .slide li > ul {
     margin-bottom: 0;
 }

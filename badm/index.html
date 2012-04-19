@@ -50,28 +50,32 @@
 
 	<h2>Philosophy</h2>
 
-    <ul>
-        <li>secure data</li>
-        <li class="slide">
-            minimize request size
-            <ul>
-                <li>lots of linking</li>
-            </ul>
-        </li>
-        <li class="slide">
-            fully audited
-            <ul>
-                <li>completely automated</li>
-            </ul>
-        </li>
-        <li class="slide">
-            simple user experience
-            <ul>
-                <li>minimize parameters</li>
-                <li>factory-free</li>
-            </ul>
-        </li>
-    </ul>
+    <div class="media">
+
+        <ul class="body">
+            <li>secure data</li>
+            <li class="slide">
+                minimize request size
+                <ul>
+                    <li>lots of linking</li>
+                </ul>
+            </li>
+            <li class="slide">
+                fully audited
+                <ul>
+                    <li>completely automated</li>
+                </ul>
+            </li>
+            <li class="slide">
+                simple user experience
+                <ul>
+                    <li>minimize parameters</li>
+                    <li>factory-free</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
 
 </section>
 
@@ -79,23 +83,31 @@
 
     <h2>Hierarchy</h2>
 
-    <ul>
-        <li>
-            BaseModel
-            <ul>
-                <li>Budget</li>
-                <li>
-                    Line
-                    <ul class="no-buffer">
-                        <li>Subline</li>
-                    </ul>
-                </li>
-                <li>Transaction</li>
-                <li>Audit</li>
-                <li>Note</li>
-            </ul>
-        </li>
-    </ul>
+    <div class="media">
+
+        <div class="img">
+            <img src="img/model.png" />
+        </div>
+
+        <ul class="body">
+            <li>
+                BaseModel
+                <ul>
+                    <li>Budget</li>
+                    <li>
+                        Line
+                        <ul class="no-buffer">
+                            <li>Subline</li>
+                        </ul>
+                    </li>
+                    <li>Transaction</li>
+                    <li>Audit</li>
+                    <li>Note</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
 
 </section>
 
@@ -104,9 +116,11 @@
     <h2>Tradeoffs</h2>
 
     <ul>
-        <li>smaller requests => more requests</li>
+        <li>linking => more requests</li>
         <li class="slide">auditing => even more requests</li>
     </ul>
+
+    <h1 class="slide dark">SO MANY REQUESTS</h1>
 
 </section>
 
@@ -115,8 +129,9 @@
     <h2>Improvement</h2>
 
     <ul>
-        <li>more automation</li>
-        <li>simplified queries</li>
+        <li><strong>ux =></strong> simplified queries</li>
+        <li><strong>ux =></strong> more automation</li>
+        <li class="slide"><strong>requests =></strong> eagar loading</li>
     </ul>
 
 </section>
@@ -132,19 +147,39 @@
 
     <h2>What works...</h2>
 
-    <ul>
-        <li>create</li>
-        <li>
-            read
-            <ul>
-                <li><code>Budget.all()</code></li>
-                <li><code>Budget.find(id)</code></li>
-            </ul>
-        </li>
-        <li>update</li>
-        <li>delete</li>
-        <li>auditing</li>
-    </ul>
+    <div class="media">
+
+        <div class="img">
+
+            <img src="img/check.svg" style="margin:50px;" />
+
+        </div>
+
+        <ul class="body">
+            <li>create</li>
+            <li>
+                read
+                <ul>
+                    <li><code>Budget.all()</code></li>
+                    <li><code>Budget.find(id)</code></li>
+                </ul>
+            </li>
+            <li>
+                update
+                <ul>
+                    <li><code>budget.commit()</code></li>
+                </ul>
+            </li>
+            <li>
+                delete
+                <ul>
+                    <li><code>budget.delete()</code></li>
+                </ul>
+            </li>
+            <li>auditing</li>
+        </ul>
+
+    </div>
 
 </section>
 
