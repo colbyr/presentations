@@ -73,7 +73,8 @@ author: @colbyrabideau
     color: #888;
 }
 .deck-container .slide li {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: .5em;
 }
 .deck-container .slide pre {
     border-color: #ccc;
