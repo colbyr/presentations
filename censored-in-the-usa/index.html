@@ -23,13 +23,23 @@
     .deck-container .slide .dark {
       color: #454073;
     }
-    .deck-container .slide h1,
-    .deck-container .slide h2 {
+    .deck-container .slide h1 {
       color: #dc2444;
-      font-family: "Courier New";
+      font-family: monospace;
+    }
+    .deck-container .slide h2 {
+      border-bottom: none;
+      color: #333333;
+      font-family: monospace;
     }
     .deck-container .slide small {
       color: #888888;
+      font-size: .7em;
+      font-weight: normal;
+    }
+    .deck-container .slide .no-list {
+      list-style: none;
+      margin-left: 0;
     }
   </style>
 
@@ -43,7 +53,7 @@
 <section id="intro" class="slide">
 
     <div class="vcenter">
-        <h1 class="dark">></h1>
+        <h1>></h1>
         <h3>... use the arrows ...</h3>
     </div>
 
@@ -59,77 +69,109 @@
 </section>
 
 <!-- make bullets -->
-<section class="slide">
+<section id="table-of-contents" class="slide">
 
-  <h2>What's the deal</h2>
-
-  <ol>
-    <li class="slide">History of Censorship in America</li>
-    <li class="slide">The Internet <small>it's kind of a big deal</small></li>
-    <li class="slide">SOPA <small>i.e. standing up to our media overlords</small></li>
+  <ol class="no-list vcenter">
+    <li>History of Censorship<br/><small>in America</small></li>
+    <li>The Internet<br/><small>it's kind of a big deal</small></li>
+    <li>SOPA<br/><small>beware our media overlords</small></li>
   </ol>
 
 </section>
 
-<!-- use pictures -->
+<!-- !history -->
 <section id="historical-censorship" class="slide">
 
-  <h1>Historical Censorship</h1>
+  <div class="vcenter">
+    <h1>Historically</h1>
+    <h3>All of this has happened before...</h3>
+  </div>
 
 </section>
 
-<!-- a block quote -->
-<section class="slide">
-
-  <h2>A quote!</h2>
-
-  <p>Because dammit, sometimes you just need a block quote.</p>
-
-  <blockquote>This here is a quote!<br/><cite>~ Colby</cite></blockquote>
-
-</section>
-
-<!-- code -->
-<section class="slide">
-
-  <h2>Some code...</h2>
-  <h3>Why do I like javascript?</h3>
-<pre><code>// well duh...
-var javascript_is_the_coolest = (function () {
-  return true; 
-}());</code></pre>
-  
-  <p>This is code in a paragraph: <code>var hello = "world";</code></p>
-
-</section>
-
-<!-- paragraphs -->
-<section class="slide">
-
-  <h2>Text</h2>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-</section>
-
-<!-- links -->
-<section class="slide">
-
-  <h2>Links</h2>
-
-  <p>This paragraph has a <a href="http://colbyrabideau.com">link</a> in it!!! Woah! That's the coolest link I have EVER SEEN!</p>
-
-</section>
-
-<!-- vcenter -->
 <section class="slide">
 
   <div class="vcenter">
-    <h2>Vertically Centered</h2>
-    <h3>with a subtitle!</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h3>1798</h3>
+    <h2>the Sedition Act</h2>
+  </div>
+
+</section>
+
+<section class="slide">
+
+  <div class="vcenter">
+    <img src="img/french-revolution.jpg" />
+    <h3>The French Revolution</h3>
+  </div>
+
+</section>
+
+<section class="slide">
+
+  <div class="vcenter">
+    <img src="img/adams.jpg" />
+    <h3>The Federalists</h3>
+  </div>
+
+</section>
+
+<section class="slide">
+
+  <div class="vcenter">
+    <img src="img/quasi-war.jpg" />
+    <h3>the Quasi-War (1798-1800)</h3>
+  </div>
+
+</section>
+
+<section class="slide">
+
+  <h2>The Sedition Act</h2>
+
+  <ul>
+    <li>passed in 1798</li>
+    <li>speaking ill of the government was a crime</li>
+    <li>punishable by a fine of up to $2,000 and imprisonment for up to 2 years</li>
+    <li>25 arrested; almost half convicted</li>
+  </ul>
+
+</section>
+
+<section class="slide">
+
+  <div  class="vcenter">
+    <h3>It was the first...</h3>
+    <h2>but not the last</h2>
+  </div>
+
+</section>
+
+<section class="slide">
+
+  <div class="vcenter">
+    <img src="img/loose-lips.jpg" />
+    <h3>World War II</h3>
+  </div>
+
+</section>
+
+<!-- !internet -->
+<section id="the-internet" class="slide">
+
+  <div class="vcenter">
+    <h1>The Internet</h1>
+    <h3>Creative Destruction at its finest</h3>
+  </div>
+
+</section>
+
+<!-- !sopa -->
+<section id="sopa" class="slide">
+
+  <div class="vcenter">
+    <h1>SOPA</h1>
+    <h3>the Stop Online Piracy Act</h3>
   </div>
 
 </section>
@@ -138,7 +180,8 @@ var javascript_is_the_coolest = (function () {
 <section class="slide">
 
   <div class="vcenter">
-    <h3>the end</h3>
+    <h2>stay vigilent</h2>
+    <small style="font-size:1.3rem">...all of this will happen again</small>
   </div>
 
 </section>
